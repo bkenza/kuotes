@@ -16,7 +16,12 @@ function getQuote() {
 function displayQuote(quote) {
   const quoteText = document.querySelector('.quote-text');
   quoteText.textContent = quote;
+
+  const tweetButton = document.querySelector('.tweet');
+  tweetButton.setAttribute('href', `https://twitter.com/share?text=${quote} - Donald Trump`);
 }
 
 const newQuoteButton = document.querySelector('.new-quote');
 newQuoteButton.addEventListener('click', getQuote);
+
+getQuote();
