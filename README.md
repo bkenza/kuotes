@@ -1,4 +1,4 @@
-# quote-generator
+# Kuotes
 
 ![Preview](/images/preview.png)
 
