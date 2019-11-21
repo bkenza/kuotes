@@ -72,6 +72,10 @@ header {
   height: var(--header-height);
 }
 
+main section div.quote-text {
+  padding-bottom: 150px;
+}
+
 p {
   text-align: center;
   color: var(--green);
@@ -95,7 +99,7 @@ p {
 }
 
 .quote-text {
-  padding-bottom: 45px;
+  padding-bottom: 20px;
   font-size: 20px;
   text-align: center;
 }
@@ -168,6 +172,6 @@ p {
 }
 
 @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
+  width: device-width;
+  zoom: 1.0;
 }
