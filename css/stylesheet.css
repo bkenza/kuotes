@@ -1,140 +1,167 @@
 @import url(https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap);
-
 :root {
-    --black: rgb(0,0,0);
-    --test-glass: rgba(0, 0, 0, 0.8);
-    --green: rgb(14, 107, 14);
-    --dark: rgba(0, 17, 17, 1);
-
-    --base-metric: 100px;
-    --header-height: var(--base-metric);
+  --black: rgb(0, 0, 0);
+  --test-glass: rgba(0, 0, 0, 0.8);
+  --green: rgb(14, 107, 14);
+  --dark: rgba(0, 17, 17, 1);
+  --base-metric: 100px;
+  --header-height: var(--base-metric);
 }
 
-
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+}
 
-  
-  html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
-    z-index: 1;
-    float: left;
-    color: var(--green);
-    font-family: 'Press Start 2P', cursive;
-    font-size: 30px;
-    margin: 10px 0 0 8px;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 3px var(--green);
-    padding-left: 25px;
-    padding-top: 10px;
+  z-index: 1;
+  float: left;
+  color: var(--green);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  margin: 10px 0 0 8px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px var(--green);
+  padding-left: 25px;
+  padding-top: 10px;
 }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: var(--black);
-    color: white;
-  }
 
-  header {
-    width: 100%;
-    height: var(--header-height);
-    background: var(--test-glass);
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: var(--black);
+  color: white;
+}
+
+body.light-theme {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body.light-theme>main {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body.light-theme>main {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body.light-theme>main button {
+  background-color: var(--white);
+}
+
+body.light-theme>main a {
+  background-color: var(--white);
+}
+
+header {
+  width: 100%;
+  height: var(--header-height);
 }
 
 p {
-    text-align: center;
-    color: var(--green);
-    font-size: 20px;
+  text-align: center;
+  color: var(--green);
+  font-size: 20px;
 }
 
-  
-  .app {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    min-height: 300px;
-    background-color: var(--black);
-    border-radius: 5px;
-  }
-  
-  .quotes {
-    padding: 20px 50px;
-    margin-top: 25px;
-  }
-  
-  .quote-text {
-    padding-bottom: 20px;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .controls {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    /* justify-content: space-between; */
-    padding: 20px 50px;
-    justify-content: center;
-  }
-  
-  .button {
-    font-size: 14px;
-    display: block;
-    border: 1px solid var(--green);
-    background-color: var(--dark-glass);
-    color: var(--green);
-    font-style: italic;
-    font-weight: bold;
-    cursor: pointer;
-    width: 70px;
-    margin: 20px;
-    /* padding: 15px 10px; */
-    /* padding-right: 10px;
-    padding-left: 10px; */
-  }
-  
-  .tweet {
-    background-color: var(--black);
-    text-decoration: none;
-    padding: 15px 10px;
-    padding-left: 14px;
-    padding-right: 5px;
-  }
-  
-  .new-quote {
-    background-color: var(--black);
-    height: 50px;
-  }
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  min-height: 300px;
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+.quotes {
+  padding: 20px 50px;
+  margin-top: 25px;
+}
+
+.quote-text {
+  padding-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 20px 50px;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.button {
+  font-size: 14px;
+  display: block;
+  border: 1px solid var(--green);
+  background-color: var(--dark-glass);
+  color: var(--green);
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  width: 70px;
+  margin: 20px;
+}
+
+#change-theme-btn {
+  font-size: 14px;
+  display: block;
+  border: 1px solid var(--green);
+  background-color: var(--dark-glass);
+  color: var(--green);
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  margin: 20px;
+  float: right;
+}
+
+.tweet {
+  background-color: var(--black);
+  text-decoration: none;
+  padding: 15px 10px;
+  padding-left: 14px;
+  padding-right: 5px;
+}
+
+.new-quote {
+  background-color: var(--black);
+  height: 50px;
+}
 
 .pic {
-        padding-top: 14px; 
-        padding-right: 10px;
-        float: right;
-    }
-  
-  
-  @media screen and (max-width: 600px) {
-    .app {
-      width: 100%;
-    }
-    .quote-text {
-      font-size: 18px;
-    }
+  padding-top: 14px;
+  padding-right: 10px;
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    width: 100%;
   }
+  .quote-text {
+    font-size: 18px;
+  }
+}
