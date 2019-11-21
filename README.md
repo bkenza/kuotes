@@ -15,4 +15,4 @@ Super simple web application that uses the HTML, CSS and basic Javascript to dis
 
 # Demo
 A demo can be found 
-*[here!](https://bkenza.github.io/quote-generator/)*
+*[here!](https://bkenza.github.io/kuotes/)*
