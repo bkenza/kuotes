@@ -143,6 +143,22 @@ p {
   float: right;
 }
 
+#about {
+  font-size: 14px;
+  display: block;
+  border: 1px solid var(--green);
+  background-color: var(--dark-glass);
+  color: var(--green);
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+  margin: 20px;
+  margin-left:5px;
+  float: right;
+}
+
 .tweet {
   background-color: var(--black);
   text-decoration: none;
@@ -157,7 +173,7 @@ p {
 }
 
 .pic {
-  padding-top: 14px;
+  padding-top: 17px;
   padding-right: 10px;
   float: right;
 }

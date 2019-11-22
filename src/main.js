@@ -32,8 +32,6 @@ const newQuoteButton = document.querySelector('.new-quote');
 newQuoteButton.addEventListener('click', getQuote);
 
 const changeThemeButton = document.getElementById('change-theme-btn');
-changeThemeButton.addEventListener('click', changeTheme)
-
-
+changeThemeButton.addEventListener('click', changeTheme);
 
 getQuote();
