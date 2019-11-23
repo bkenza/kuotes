@@ -35,3 +35,32 @@ const changeThemeButton = document.getElementById('change-theme-btn');
 changeThemeButton.addEventListener('click', changeTheme);
 
 getQuote();
+
+//-----------------------------
+//           MODALS
+//-----------------------------
+
+function openModal() {
+  modal.style.display = 'flex';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+  modal.style.display = 'none';
+}
+}
+
+const modal = document.getElementById('about-modal');
+
+const aboutButton = document.getElementById('about');
+aboutButton.addEventListener('click', openModal);
+
+const span = document.getElementsByClassName('close')[0];
+span.addEventListener('click', closeModal);
+
+
