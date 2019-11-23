@@ -6,6 +6,7 @@
   --dark: rgba(0, 17, 17, 1);
   --base-metric: 100px;
   --header-height: var(--base-metric);
+  --white: rgb(255, 255, 255);
 }
 
 html {
@@ -190,4 +191,64 @@ p {
 @viewport {
   width: device-width;
   zoom: 1.0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Modal Content */
+
+.modal-content {
+  background-color: var(--black);
+  margin: auto;
+  padding: 20px;
+  border: 4px solid var(--green);
+  width: 50%;
+  height: 50%;
+}
+
+.top-part>h2 {
+  border-bottom: 1px solid var(--green);
+  font-size: 16px;
+  padding-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.close {
+  color: var(--green);
+  display: block;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: green;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.p3 {
+  font-size: 17px;
+  padding-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+a:hover {
+  color: green;
 }
