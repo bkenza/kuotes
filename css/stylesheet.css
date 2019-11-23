@@ -68,6 +68,16 @@ body.light-theme>main a {
   background-color: var(--white);
 }
 
+body.light-theme>div>div>p {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body.light-theme>div>div {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 header {
   width: 100%;
   height: var(--header-height);
